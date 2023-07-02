@@ -3,12 +3,12 @@
 #include <arpa/inet.h>
 #include "add_nbo.h"
 
-uint32_t add_nbo(char *file,char *file2){
+uint32_t add_nbo(char *filename,char *filename2){
 	FILE *fp1,*fp2;
 	uint32_t thousand,fiveHundred;
 
-	fp1 = fopen(file,"rb");
-	fp2 = fopen(file2,"rb");
+	fp1 = fopen(filename,"rb");
+	fp2 = fopen(filename2,"rb");
 
 	if(fp1 == NULL | fp2 == NULL ) {
 		printf("file not open");
